@@ -1,0 +1,33 @@
+.cart-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.cart-amount {
+    /* display: inline-block;
+    margin: 0 5px; */
+    max-width: 50px;
+}
+
+tr td i {
+    font-size: 1rem;
+    color: red;
+}
+
+.total-title {
+    font-size: 2rem;
+    margin-right: 0;
+    color: #ff0e24;
+}
+
+.total-price {
+    font-weight: 600;
+    font-size: 2rem;
+    max-width: 120px;
+}
+
+.total-pay {
+    font-size: 2rem;
+    min-width: 100px;
+}

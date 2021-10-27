@@ -1,0 +1,77 @@
+.area-form {
+    width: 450px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+    border-radius: 5px;
+    padding: 0 30px;
+}
+
+
+/* .area-form input:active {
+    outline: none;
+    border: none;
+}
+
+.area-form input:focus {
+    border: none;
+    outline: none;
+} */
+
+.name-form {
+    color: var(--primary-color);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.btn-login {
+    width: 100%;
+    height: 65px;
+    background: var(--primary-background);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: rgb(243, 242, 242);
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.form-input {
+    width: 100%;
+    height: 40px;
+    background: #f0f2f5;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: none;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(62, 62, 62, .6);
+}
+
+.form-input:focus {
+    border: solid 1px var(--primary-color);
+    outline: var(--primary-color);
+}
+
+.form-message {
+    color: #f33a58;
+    font-size: 1.2rem;
+}
+
+.login-sub {
+    margin-bottom: 15px;
+}
+
+.login-sub span a {
+    color: var(--primary-color);
+}
+
+.invalid .form-input {
+    border: solid 1px #f33a58;
+}
