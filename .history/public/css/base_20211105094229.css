@@ -137,12 +137,6 @@ a:hover {
     border-radius: 10px;
 }
 
-.btn:focus {
-    outline: none;
-    border: none;
-    box-shadow: none;
-}
-
 
 /* .btn--primary {
     border: 3px solid transparent;

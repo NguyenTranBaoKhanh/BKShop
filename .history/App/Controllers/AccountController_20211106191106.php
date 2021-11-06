@@ -110,7 +110,7 @@ class AccountController extends Controller
   function checkUser()
     {
         if (isset($_GET['taikhoan'])) {
-            $result = $this->userModel->getUser($_GET['taikhoan']);
+            $result = $this->userModel->getEmail($_GET['taikhoan']);
             if ($result) {
                 echo "false";
                 return;

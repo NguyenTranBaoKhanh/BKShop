@@ -72,7 +72,9 @@
 
         var taikhoan = document.getElementById('taikhoan');
         var form = document.getElementById('form1');
+
         console.log(taikhoan.value);
+
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {

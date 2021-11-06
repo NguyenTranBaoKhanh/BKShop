@@ -21,8 +21,7 @@
                 <div class="mb-4 form-group">
                     <label for="taikhoan">Tên đăng nhập:</label>
                     <input class="form-input" id="taikhoan" type="text" name="taikhoan" onkeyup="checkUser()" placeholder="" required>
-                    <span class="form-message"></span>
-                    <p style="" class="form-message" id="checkUserMessage"></p>
+                    <span class="form-message" id="checkUserMessage"></span>
                 </div>
                 <div class="mb-4 form-group">
                     <label for="matkhau">Mật khẩu:</label>
@@ -68,11 +67,11 @@
 </script>
 
 <script>
-    function checkUser() {
+    function checkEmail() {
 
         var taikhoan = document.getElementById('taikhoan');
-        var form = document.getElementById('form1');
         console.log(taikhoan.value);
+
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
@@ -80,17 +79,12 @@
                 console.log(this.responseText);
 
                 if (this.responseText === "false") {
-                    document.getElementById('checkUserMessage').innerText = "Tài khoản đã tồn tại!";
-                    form.onsubmit = function(e) {
-                        e.preventDefault();
-                    }
+                    document.getElementById('checkUserMessage').innerHTML = "Tài khoản đã tồn tại!";
                 } else {
                     document.getElementById('checkUserMessage').innerHTML = "";
-                    form.onsubmit = function(e) {
-                        e.submit();
-                    }
                 }
-                if (taikhoan.value == "") {
+
+                if (email.value == "") {
                     document.getElementById('checkUserMessage').innerHTML = "";
                 }
             }

@@ -21,8 +21,8 @@
                 <div class="mb-4 form-group">
                     <label for="taikhoan">Tên đăng nhập:</label>
                     <input class="form-input" id="taikhoan" type="text" name="taikhoan" onkeyup="checkUser()" placeholder="" required>
-                    <span class="form-message"></span>
-                    <p style="" class="form-message" id="checkUserMessage"></p>
+                    <span class="form-message" id="checkUserMessage"></span>
+                    <p style="margin-top: 5px;" class="" id="checkUserMessage"></p>
                 </div>
                 <div class="mb-4 form-group">
                     <label for="matkhau">Mật khẩu:</label>
@@ -71,8 +71,8 @@
     function checkUser() {
 
         var taikhoan = document.getElementById('taikhoan');
-        var form = document.getElementById('form1');
         console.log(taikhoan.value);
+
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
@@ -81,18 +81,13 @@
 
                 if (this.responseText === "false") {
                     document.getElementById('checkUserMessage').innerText = "Tài khoản đã tồn tại!";
-                    form.onsubmit = function(e) {
-                        e.preventDefault();
-                    }
                 } else {
                     document.getElementById('checkUserMessage').innerHTML = "";
-                    form.onsubmit = function(e) {
-                        e.submit();
-                    }
                 }
-                if (taikhoan.value == "") {
-                    document.getElementById('checkUserMessage').innerHTML = "";
-                }
+
+                // if (taikhoan.value == "") {
+                //     document.getElementById('checkUserMessage').innerHTML = "";
+                // }
             }
         };
         xhttp.open("GET", "<?= DOCUMENT_ROOT ?>/account/checkUser?taikhoan=" + taikhoan.value, true);

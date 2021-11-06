@@ -137,10 +137,10 @@ a:hover {
     border-radius: 10px;
 }
 
-.btn:focus {
+button,
+a:active {
     outline: none;
     border: none;
-    box-shadow: none;
 }
 
 

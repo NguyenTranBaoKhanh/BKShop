@@ -52,7 +52,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="<?= PUBLIC_URL ?>/js/swiper.js"></script>
     <script src="<?= PUBLIC_URL ?>/js/cart.js"></script>
-    
+    <script src="<?= PUBLIC_URL ?>/js/validator.js"></script>
 
 
 
