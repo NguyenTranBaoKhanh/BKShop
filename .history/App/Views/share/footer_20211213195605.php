@@ -4,11 +4,11 @@
             <img src="<?= PUBLIC_URL ?>/img/BK-logos_transparent.png" alt="" class="footer__logo">
             <ul class="footer__list">
                 <h6>Quy định - chính sách</h6>
-                <li><a href="<?= DOCUMENT_ROOT?>/chinhsach/chinhsachbaohanh">Chính sách bảo hành</a></li>
-                <li><a href="<?= DOCUMENT_ROOT?>/chinhsach/chinhsachvanchuyen">Chính sách vận chuyển</a></li>
-                <li><a href="<?= DOCUMENT_ROOT?>/chinhsach/chinhsachdoitra">Chính sách đổi trả hàng</a></li>
-                <li><a href="<?= DOCUMENT_ROOT?>/chinhsach/chinhsachbaomat">Chính sách bảo mật thông tin</a></li>
+                <li><a href="<?= DOCUMENT_ROOT?>/chinhsach/chínhachbaohanh">Chính sách bảo hành</a></li>
+                <li><a href="">Chính sách vận chuyển</a></li>
+                <li><a href="">Chính sách đổi trả hàng</a></li>
                 <li><a href="">Hướng dẫn thanh toán</a></li>
+                <li><a href="">Chính sách bảo mật thông tin</a></li>
             </ul>
             <ul class="footer__list">
                 <h6>Đăng ký nhận bảng tin</h6>

@@ -79,7 +79,7 @@
                                            <h4 class="wipper__item__name"><?= $item['ten'] ?></h4>
                                            <div class="wipper__item__price d-flex-end">
                                                <span class="wipper__item__price-old"><?= $item['gia'] ?>đ</span>
-                                               <span class="wipper__item__price-current"><?= number_format($item['gia'] * 0.9) ?>đ</span>
+                                               <span class="wipper__item__price-current"><?= $item['gia'] * 0.9 ?>đ</span>
                                            </div>
                                            <a href="" class="btn btn-primary wipper__item__btn">Mua</a>
                                        </div>

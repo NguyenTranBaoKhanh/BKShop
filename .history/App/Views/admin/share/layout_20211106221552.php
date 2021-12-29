@@ -22,6 +22,14 @@
     <link rel="stylesheet" href="<?= PUBLIC_URL . "/admin" ?>/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
     <link rel="stylesheet" href="<?= PUBLIC_URL . "/admin" ?>/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
 
+    <!-- daterange picker -->
+    <link rel="stylesheet" href="<?= PUBLIC_URL . "/admin" ?>/plugins/daterangepicker/daterangepicker.css">
+  <!-- iCheck for checkboxes and radio inputs -->
+  <link rel="stylesheet" href="<?= PUBLIC_URL . "/admin" ?>/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Bootstrap Color Picker -->
+    <link rel="stylesheet" href="<?= PUBLIC_URL . "/admin" ?>/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+      <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="<?= PUBLIC_URL . "/admin" ?>/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
 
   <?php endif; ?>
   <?php if (!isset($_SESSION['admin'])) : ?>
@@ -74,6 +82,9 @@
     <script src="<?= PUBLIC_URL . "/admin" ?>/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
     <!-- AdminLTE App -->
     <script src="<?= PUBLIC_URL . "/admin" ?>/dist/js/adminlte.js"></script>
+
+    <!-- Bootstrap4 Duallistbox -->
+<script src="<?= PUBLIC_URL . "/admin" ?>/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
 
 
     <!-- DataTables  & Plugins -->

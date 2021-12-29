@@ -5,7 +5,8 @@
                 Điện thoại <i class="fas fa-chevron-right"></i><a href=""><?= $data['hang']['ten_hang'] ?></a>
             </div>
             <div class="product__name d-flex justify-content-between">
-                <span class="name"><?= $data['item']['ten'] ?> <span class="fs-4">(số lượng: <?= $data['item']['so_luong'] ?>)</span></span>
+                <span class="name"><?= $data['item']['ten'] ?> (số lượng: <?= $data['item']['ten'] ?>)</span>
+                <!-- <span><?= $data['item']['so_luong'] ?></span> -->
                 <div class="product__rating">
                     <span class="item__rating-star">
                         <i class="fas fa-star"></i>

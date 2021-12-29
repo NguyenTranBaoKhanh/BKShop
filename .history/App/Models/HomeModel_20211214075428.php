@@ -525,8 +525,11 @@ class HomeModel extends Database
         $id_donhang = $data['id_donhang'];
         $ngay_giao = $data['ngay_giao'];
 
+
+
+
         $sql = $this->conn->prepare("update donhang set ngay_giao=? where id=?");
-        $sql->bind_param("si", $ngay_giao, $id_donhang);
+        $sql->bind_param("si", $trang_thai, $id_donhang);
         $sql->execute();
 
         $result = $sql->get_result();

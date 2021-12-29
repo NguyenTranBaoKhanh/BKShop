@@ -101,8 +101,8 @@ class HomeController extends Controller
 
 
 
-        $data['id_url'] = $id;
-        $data['mau_url'] = $mau;
+        $data['id_url']=$id;
+        $data['mau_url']=$mau;
         $item = $this->smartphoneModel->getById($id);
         $data['item'] = $item;
 
@@ -111,10 +111,10 @@ class HomeController extends Controller
 
         $ma_sp = $item['ma_sp'];
         $data['ma_sp'] = $this->smartphoneModel->get_ma_sp_and_mau($ma_sp, $mau);
-        $data['mau'] = $this->smartphoneModel->get_ma_sp($ma_sp);
+        $data['mau']=$this->smartphoneModel->get_ma_sp($ma_sp);
 
-        $data['tuong_tu'] = $this->smartphoneModel->get_sp_tuong_tu($ma_sp);
-
+        $data['tuong_tu']= $this->smartphoneModel->get_sp_tuong_tu($ma_sp);
+        
 
 
         $this->view("/home/detail", $data);

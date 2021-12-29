@@ -59,7 +59,7 @@
                     <td>
                       <div class="input-group date" id="reservationdate" data-target-input="nearest">
                         <div class=" form-group">
-                          <input required type="date" id="ngaygiao<?= $index + 1 ?>" onchange="changeDate(<?= $donhang['id'] ?>,ngaygiao<?= $index + 1 ?>)" name="deliverydate" class="form-control" value="<?= date_format(date_create(str_replace("-", "-",  $donhang['ngay_giao'])), "Y-m-d") ?>"></input>
+                          <input required type="date" id="deliverydate" name="deliverydate" class="form-control" value="<?= date_format(date_create(str_replace("-", "-",  $donhang['ngay_giao'])), "Y-m-d") ?>"></input>
                         </div>
                       </div>
                     </td>
@@ -111,23 +111,6 @@
     };
     xhttp.open(
       "GET", "<?= DOCUMENT_ROOT ?>/admin/donhang/changestatus?id_donhang=" + id_donhang + "&trang_thai=" + id_trangthai.value,
-      true
-    );
-    xhttp.send();
-  }
-
-  function changeDate(id_donhang, ngay_giao) {
-
-    console.log(id_donhang);
-    console.log(ngay_giao.value);
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        // console.log(this.responseText);
-      }
-    };
-    xhttp.open(
-      "GET", "<?= DOCUMENT_ROOT ?>/admin/donhang/changedate?id_donhang=" + id_donhang + "&ngay_giao=" + ngay_giao.value,
       true
     );
     xhttp.send();

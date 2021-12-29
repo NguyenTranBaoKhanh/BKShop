@@ -82,10 +82,10 @@ class DonhangController extends Controller
         $this->view("/admin/donhang/detail", $data);
     }
 
-    function changedate()
+    function changesDate()
     {
         if (isset($_GET)) {
-            $result = $this->homeModel->changeDate($_GET);
+            $result = $this->homeModel->changeStatus($_GET);
             // echo json_encode($result);
             return;
         } else echo "can not change amount";

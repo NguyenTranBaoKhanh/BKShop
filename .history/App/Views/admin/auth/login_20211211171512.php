@@ -25,7 +25,7 @@
                 <div class="area-form">
                     <hr />
                     <h1 class="name-form">ĐĂNG NHẬP</h1>
-                    <p class="text-center">(Đăng nhập với tư cách admin để vào trang quản lý)</p>
+                    <p>(Đăng nhập với tư cách admin để vào trang quản lý)</p>
                     <form class="" action="<?=DOCUMENT_ROOT?>/admin/account/check_login" method="post">
                         <div class="mb-3">
                             <!-- <input class="form-input" type="text" name="username" placeholder="Tên đăng nhập" required> -->
