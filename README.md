@@ -1,5 +1,5 @@
-# SofY_Sports
- E-commerce website for sports business - My project for the subject
+# BKSHOP
+ E-commerce website for smartphones- My project for the subject
  
  ## Technical Stack
  - PHP-MVC 
