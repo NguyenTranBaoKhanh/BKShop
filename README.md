@@ -16,6 +16,6 @@
  ### Admin site:
 ![image](https://user-images.githubusercontent.com/75532626/147314683-d66922d7-5d95-405f-9de9-e87c7220c76f.png)
 ###test
-![image](https://github.com/NguyenTranBaoKhanh/BKShop/issues/1#issue-1170692253)
+![Screenshot (8)](https://user-images.githubusercontent.com/76188911/158547739-47245476-1774-454f-9416-7080cee8b0b0.png)
 =======
 
