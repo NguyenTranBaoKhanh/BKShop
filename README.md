@@ -12,10 +12,8 @@
 
  ## UI
  ### Client site:
-![Design show](https://user-images.githubusercontent.com/75532626/147314555-0d1555d4-d9cd-4933-a31a-3e3adba17d36.png)
+![client](https://user-images.githubusercontent.com/76188911/158549029-53b15152-cb6f-48bf-8a9a-49b17146cd13.png)
  ### Admin site:
-![image](https://user-images.githubusercontent.com/75532626/147314683-d66922d7-5d95-405f-9de9-e87c7220c76f.png)
-###test
-![Screenshot (8)](https://user-images.githubusercontent.com/76188911/158547739-47245476-1774-454f-9416-7080cee8b0b0.png)
+![admin](https://user-images.githubusercontent.com/76188911/158548999-23f898d3-3237-4bb3-8ceb-61b626c939a2.png)
 =======
 
