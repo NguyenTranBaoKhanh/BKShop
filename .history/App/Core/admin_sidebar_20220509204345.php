@@ -38,10 +38,10 @@ return [
         "link" => DOCUMENT_ROOT . "/admin/khachhang",
     ],
     "comment" => [
-        "title" => "Quản lý bình luận",
-        "name" => "binhluan",
+        "title" => "Đăng xuất",
+        "name" => "admin",
         "icon" => "fas fa-file-invoice",
-        "link" => DOCUMENT_ROOT . "/admin/binhluan",
+        "link" => DOCUMENT_ROOT . "/admin/account/logout",
     ],
     "admin" => [
         "title" => "Đăng xuất",

@@ -567,7 +567,7 @@ class HomeModel extends Database
     }
 
     function getAllComment(){
-        $sql = $this->conn->prepare("SELECT binhluan.id, khachhang.ten as tenkhachhang, hanghoa.ten as tenhanghoa, ngaybinhluan, noidung, sao from binhluan JOIN khachhang ON binhluan.id_khachhang = khachhang.id JOIN hanghoa ON binhluan.id_hanghoa=hanghoa.id ORDER BY binhluan.id DESC");
+        $sql = $this->conn->prepare("SELECT binhluan.id, khachhang.ten as tenkhachhang, hanghoa.ten as tenhanghoa, ngaybinhluan, noidung from binhluan JOIN khachhang ON binhluan.id_khachhang = khachhang.id JOIN hanghoa ON binhluan.id_hanghoa=hanghoa.id ORDER BY binhluan.id DESC");
         // $sql->bind_param("i", $id);
         $sql->execute();
 

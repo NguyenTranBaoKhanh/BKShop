@@ -567,7 +567,7 @@ class HomeModel extends Database
     }
 
     function getAllComment(){
-        $sql = $this->conn->prepare("SELECT binhluan.id, khachhang.ten as tenkhachhang, hanghoa.ten as tenhanghoa, ngaybinhluan, noidung, sao from binhluan JOIN khachhang ON binhluan.id_khachhang = khachhang.id JOIN hanghoa ON binhluan.id_hanghoa=hanghoa.id ORDER BY binhluan.id DESC");
+        $sql = $this->conn->prepare("SELECT * from binhluan JOIN khachhang ON binhluan.id_khachhang = khachhang.id ORDER BY binhluan.id DESC");
         // $sql->bind_param("i", $id);
         $sql->execute();
 
@@ -649,21 +649,6 @@ class HomeModel extends Database
             return $result->fetch_assoc();
         } else {
             return false;
-        }
-    }
-
-    function delComment($id){
-        $sql = $this->conn->prepare("delete from binhluan where id=?");
-        $sql->bind_param("i", $id);
-        $sql->execute();
-
-        //coi đã insert dô chưa, nếu dô thì affaced_rows > 1
-        $result = $sql->affected_rows;
-
-        if ($result < 1) {
-            return false;
-        } else {
-            return true;
         }
     }
 
