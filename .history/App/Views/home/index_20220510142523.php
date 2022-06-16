@@ -101,18 +101,13 @@
                </div>
                <div class=" row row-cols-5 items">
                    <?php foreach ($data['itemOnPage'] as $index => $item) : ?>
-                       <div class="col <?=$item['khuyen_mai']==0 ? 'item2' : 'item'?>">
+                       <div class="col item">
                            <a href="<?= DOCUMENT_ROOT . "/home/detail/" . $item['id'] . "/" . $item['mau'] ?>">
                                <div class="item__img" style="background-image: url(<?= PUBLIC_URL ?>/img/<?= $item['hinh'] ?>);"></div>
                                <h4 class="item__name"><?= $item['ten'] ?></h4>
                                <div class="item__price d-flex-end">
-                                   <?php
-                                    if($item['khuyen_mai']==1){
-                                        echo '<span class="item__price-old">'.number_format($item["gia"]).'đ</span>';
-                                    };
-                                   ?>
-                                   <!-- <span class="item__price-old"><?= number_format($item['gia']) ?>đ</span> -->
-                                   <span class="item__price-current"><?= number_format($item['gia'] * 0.95) ?>đ</span>
+                                   <span class="item__price-old"><?= number_format($item['gia']) ?>đ</span>
+                                   <!-- <span class="item__price-current"><?= number_format($item['gia'] * 0.95) ?>đ</span> -->
                                </div>
                                <div class="item__rating">
                                    <!-- <?= ($data[$item['id']]['avg']['tb']) ?> -->

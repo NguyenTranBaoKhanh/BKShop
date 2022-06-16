@@ -92,7 +92,7 @@
     background-color: #0f8131;
 }
 
-.item::before {
+/* .item::before {
     content: "Yêu thích";
     position: absolute;
     top: 10px;
@@ -105,7 +105,7 @@
     padding: 0 4px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-}
+} */
 
 
 

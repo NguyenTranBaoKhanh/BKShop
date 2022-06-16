@@ -109,10 +109,14 @@
                                    <?php
                                     if($item['khuyen_mai']==1){
                                         echo '<span class="item__price-old">'.number_format($item["gia"]).'đ</span>';
+                                        echo '<span class="item__price-current">'.number_format($item['gia'] * 0.95).'đ</span>';
+
+                                    }else{
+                                        echo '<span class="item__price-current">'.number_format($item["gia"]).'đ</span>';
                                     };
                                    ?>
                                    <!-- <span class="item__price-old"><?= number_format($item['gia']) ?>đ</span> -->
-                                   <span class="item__price-current"><?= number_format($item['gia'] * 0.95) ?>đ</span>
+                                   <!-- <span class="item__price-current"><?= number_format($item['gia'] * 0.95) ?>đ</span> -->
                                </div>
                                <div class="item__rating">
                                    <!-- <?= ($data[$item['id']]['avg']['tb']) ?> -->

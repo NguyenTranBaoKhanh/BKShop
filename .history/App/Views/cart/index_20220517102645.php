@@ -27,7 +27,7 @@
                 <input type="number" hidden id="itemPrice<?= $index ?>" value="<?= $item['gia'] * 0.95 ?>">
                 <td class="text-center"><?= number_format($item['gia'] * 0.95) ?>đ</td>
                 <td class="text-center">
-                  <input onchange="changeAmount(), update(<?= $_SESSION['user']['id'] ?>,<?= $item['id'] ?>,amount<?= $index ?>), refreshNumInCart()" max="<?=$item['so_luong']?>" min="1" id="amount<?= $index ?>" class="cart-amount" type="number" value="<?= $item['soluong'] ?>">
+                  <input onchange="changeAmount(), update(<?= $_SESSION['user']['id'] ?>,<?= $item['id'] ?>,amount<?= $index ?>), refreshNumInCart()" max=<?= $item['soluong'] ?> min=1 id="amount<?= $index ?>" class="cart-amount" type="number" value="<?= $item['soluong'] ?>">
                 </td>
                 <td id="current-price<?= $index ?>" class="text-center"><?= number_format(($item['gia'] * 0.95) * $item['soluong']) ?>đ</td>
                 <td class="text-center">

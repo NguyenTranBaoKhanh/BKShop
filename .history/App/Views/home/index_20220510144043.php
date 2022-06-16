@@ -108,7 +108,7 @@
                                <div class="item__price d-flex-end">
                                    <?php
                                     if($item['khuyen_mai']==1){
-                                        echo '<span class="item__price-old">'.number_format($item["gia"]).'đ</span>';
+                                        echo '<span class="item__price-old"><?= number_format($item["gia"]) ?>đ</span>';
                                     };
                                    ?>
                                    <!-- <span class="item__price-old"><?= number_format($item['gia']) ?>đ</span> -->

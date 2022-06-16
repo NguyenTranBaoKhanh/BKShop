@@ -16,13 +16,6 @@
     overflow: hidden;
     position: relative;
 }
-.item2 {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    /* padding: 5px; */
-    overflow: hidden;
-    position: relative;
-}
 
 .item__img {
     padding-top: 100%;
@@ -106,8 +99,6 @@
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-
-
 
 .item::after {
     content: "Sale!";
